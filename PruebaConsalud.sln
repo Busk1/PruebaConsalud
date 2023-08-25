@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34004.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaConsalud", "src\PruebaConsalud\PruebaConsalud.csproj", "{71148714-87A4-4F2B-B5A6-2CF7E826CDDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaConsalud.Tests.Unit", "test\PruebaConsalud.Tests.Unit\PruebaConsalud.Tests.Unit.csproj", "{708F710F-5E82-418C-A1BA-B726D265BEFC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{71148714-87A4-4F2B-B5A6-2CF7E826CDDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71148714-87A4-4F2B-B5A6-2CF7E826CDDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71148714-87A4-4F2B-B5A6-2CF7E826CDDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71148714-87A4-4F2B-B5A6-2CF7E826CDDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{708F710F-5E82-418C-A1BA-B726D265BEFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{708F710F-5E82-418C-A1BA-B726D265BEFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{708F710F-5E82-418C-A1BA-B726D265BEFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{708F710F-5E82-418C-A1BA-B726D265BEFC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8A75EC3B-95DF-4036-A5EB-4AFA126ACD6B}
+	EndGlobalSection
+EndGlobal

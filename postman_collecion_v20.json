@@ -1,0 +1,114 @@
+{
+	"info": {
+		"_postman_id": "50d34ba7-1e75-4a64-96e9-c60599439cc5",
+		"name": "Prueba Consalud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "12166413"
+	},
+	"item": [
+		{
+			"name": "Compradores",
+			"item": [
+				{
+					"name": "Obtiene todos los compradores",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{url}}/api/compradores"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtiene el comprador con mas compras",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{url}}/api/compradores/topcompras"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facturas",
+			"item": [
+				{
+					"name": "Obtiene todas las facturas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{url}}/api/facturas"
+					},
+					"response": []
+				},
+				{
+					"name": "Obtiene las facturas filtradas por comuna",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "Obtiene las facturas de un comprador segun su RUT",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": {
+			"value": "{{apikey}}",
+			"key": "X-ApiKey"
+		}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apikey",
+			"value": "3ecdc1da15d04217b10d4508150453a4",
+			"type": "string"
+		},
+		{
+			"key": "url",
+			"value": "https://localhost:2716",
+			"type": "string"
+		}
+	]
+}
