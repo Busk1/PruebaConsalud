@@ -1,0 +1,33 @@
+{
+  "Serilog": {
+    "Properties": {
+      "Application": "PruebaConsalud"
+    },
+    "MinimumLevel": {
+      "Default": "Warning",
+      "Override": {
+        "PruebaConsalud": "Information",
+        "Microsoft": "Warning",
+        "Microsoft.Hosting.Lifetime": "Information",
+        "Microsoft.EntityFrameworkCore": "Error",
+        "Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddleware": "Fatal"
+      }
+    },
+    "Using": [ "Serilog.Enrichers.ClientInfo" ],
+    "Enrich": [
+      "WithClientIp",
+      {
+        "Name": "WithRequestHeader",
+        "Args": { "headerName": "X-ApiKey" }
+      }
+    ],
+    "WriteTo": [
+      {
+        "Name": "Console",
+        "Args": {
+          "outputTemplate": "[{Timestamp:HH:mm:ss}] {Level:u3} CLient IP: {ClientIp} header-name: {headername} {Message:lj}{NewLine}{Exception}"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UserSecretsId>3536ca3e-a684-4e2a-8caf-d4021cc7d597</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..\..</DockerfileContext>
+	</PropertyGroup>
+	<ItemGroup>
+		<InternalsVisibleTo Include="PruebaConsalud.Tests.Unit" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Carter" Version="6.1.1" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.10">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="7.0.10" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.5" />		
+		<PackageReference Include="MinimalApis.Extensions" Version="0.11.0" />
+		<PackageReference Include="Reguto" Version="2.0.0">
+			<NoWarn>NU1701</NoWarn>
+		</PackageReference>
+		<PackageReference Include="Serilog.AspNetCore" Version="7.0.0" />
+		<PackageReference Include="Serilog.Enrichers.ClientInfo" Version="2.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+</Project>
